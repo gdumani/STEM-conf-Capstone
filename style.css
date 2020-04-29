@@ -1,0 +1,21 @@
+:root {
+  --primary:#ec5242;
+  --light:#D3D3D3;
+  --dark:#272A31;
+}
+
+@font-face {
+  font-family: "Cocogoose";
+
+  src: url("./fonts/CocogoosePro-trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+label,
+.primary {
+  color:#ec5242
+}
+
+
+
