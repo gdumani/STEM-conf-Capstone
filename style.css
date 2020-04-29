@@ -4,6 +4,18 @@
   --dark:#272A31;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+list-style-type: none;
+}
+
+li {
+  padding: 1rem;
+}
+
 @font-face {
   font-family: "Cocogoose";
 
@@ -12,10 +24,30 @@
   font-style: normal;
 }
 
+header {
+  background: white;
+}
+
 label,
 .primary {
   color:#ec5242
 }
 
+.navbar-brand img {
+  margin-left: 5rem;
+  width: 8rem;
+  height: auto;
+}
 
+.table-border {
+border: solid 1px;
+padding: 8px;
+background: linear-gradient(-45deg,#ec5242 0%,#ec5242 12.5%,#272A31 12.5%, #272A31 25%,#D3D3D3 25%, #D3D3D3 37.5%, blue 37.5%, blue 50%,#ec5242 50%,#ec5242 62.5%,#272A31 62.5%, #272A31 75%,#D3D3D3 75%, #D3D3D3 87.5%, blue 87.5%, blue 100%);
+margin-bottom: 5rem;
+background-size: 40px 40px;
+}
 
+h2 {
+  text-align: center;
+  font-family: Cocogoose, sans-serif;
+}
