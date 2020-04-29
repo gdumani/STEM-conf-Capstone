@@ -42,7 +42,7 @@ label,
 .table-border {
 border: solid 1px;
 padding: 8px;
-background: linear-gradient(-45deg,#ec5242 0%,#ec5242 12.5%,#272A31 12.5%, #272A31 25%,#D3D3D3 25%, #D3D3D3 37.5%, blue 37.5%, blue 50%,#ec5242 50%,#ec5242 62.5%,#272A31 62.5%, #272A31 75%,#D3D3D3 75%, #D3D3D3 87.5%, blue 87.5%, blue 100%);
+background: linear-gradient(-45deg,#ec5242 0%,#ec5242 12.5%,#D3D3D3 12.5%, #D3D3D3 25%,#272A31 25%, #272A31 37.5%,#D3D3D3 37.5%, #D3D3D3 50%,#ec5242 50%,#ec5242 62.5%,#D3D3D3 62.5%, #D3D3D3 75%,#272A31 75%, #272A31 87.5%,#D3D3D3 87.5%, #D3D3D3 100%);
 margin-bottom: 5rem;
 background-size: 40px 40px;
 }
@@ -50,4 +50,12 @@ background-size: 40px 40px;
 h2 {
   text-align: center;
   font-family: Cocogoose, sans-serif;
+}
+
+.steps {
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+  border: solid 1px black;
+  border-radius: 3rem;
 }
