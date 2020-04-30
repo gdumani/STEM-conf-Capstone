@@ -18,8 +18,7 @@ li {
 
 @font-face {
   font-family: "Cocogoose";
-
-  src: url("./fonts/CocogoosePro-trial.woff2") format("woff2");
+  src: url(./fonts/cocogoose_trial-webfont.woff2) format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +29,7 @@ header {
 
 label,
 .primary,
-.display-2 {
+.display-4 {
   color:#ec5242
 }
 
@@ -53,13 +52,8 @@ h2,
   text-align: center;
 }
 
-
-h2,
-h3,
-h4,
-.h1,
-.display-2 {
-font-family: Cocogoose, sans-serif;
+.cocogoose {
+font-family: 'Cocogoose', Georgia, 'Times New Roman', Times, serif;
 }
 
 .steps {
@@ -70,8 +64,7 @@ font-family: Cocogoose, sans-serif;
 }
 
 .jumbotron {
-  background-image: url(./images/background.png);
+  background-image: url(./images/background.png), rgba(255,255,255,10);
   background-size: cover;
   height: 100%;
-  filter: opacity(0.7)
 }
