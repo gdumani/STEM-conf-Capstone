@@ -29,7 +29,8 @@ header {
 }
 
 label,
-.primary {
+.primary,
+.display-2 {
   color:#ec5242
 }
 
