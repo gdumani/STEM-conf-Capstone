@@ -30,7 +30,8 @@ header {
 label,
 .primary,
 .display-4,
-h4 {
+h4,
+h6 {
   color:#ec5242
 }
 
@@ -59,7 +60,7 @@ font-family: 'Cocogoose', sans-serif;
 }
 
 .shadow {
-  text-shadow: .2em .2em .2em rgb(132, 134, 141);
+  text-shadow: 0.2em 0.2em 0.2em rgb(132, 134, 141);
 }
 .outline {
   text-shadow: 
@@ -67,7 +68,7 @@ font-family: 'Cocogoose', sans-serif;
     -0.05em -0.05em 0 white,
     -0.05em 0.05em 0 white,
     0.05em -0.05em 0 white,
-    .2em .2em .2em rgb(132, 134, 141);
+    0.2em 0.2em 0.2em rgb(132, 134, 141);
 }
 .steps {
   padding: 1rem;
@@ -103,10 +104,29 @@ font-family: 'Cocogoose', sans-serif;
   text-align: center;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
-  margin: .5em;
-  
+  margin: 0.5em;
 }
 
+article > * {
+  padding: 0.5rem;
+}
+
+.gridspk {
+
+}
+
+.gridspk article {
+  display: flex;
+}
+
+.gridspk img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-top: 20px dashed rgb(132, 134, 141);
+  border-left: 20px dashed rgb(132, 134, 141);
+}
 
 
 @media screen and (min-width:768px) {
@@ -120,9 +140,15 @@ font-family: 'Cocogoose', sans-serif;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    padding:0.5rem;
-    /* margin: ; */
-    
+    padding: 0.5rem;  
+  }
+
+  .gridspk {
+    display: grid;
+    grid-template-columns:  40% 40%;
+    justify-content: space-evenly;
+    margin: auto;
+
   }
   
 }
