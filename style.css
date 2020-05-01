@@ -128,7 +128,20 @@ article > * {
   border-left: 20px dashed rgb(132, 134, 141);
 }
 
+#about-main {
+  position: relative;
+}
 
+#abount-main::after {
+  background-image: url(./images/background2.png);
+  width: 100%;
+  height: 100%;
+  object-position: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
 @media screen and (min-width:768px) {
   .flexprog {
     display: flex;
@@ -146,7 +159,7 @@ article > * {
   .gridspk {
     display: grid;
     grid-template-columns:  40% 40%;
-    justify-content: space-evenly;
+    justify-content: ;
     margin: auto;
 
   }
