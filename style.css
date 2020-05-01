@@ -4,6 +4,13 @@
   --dark:#272A31;
 }
 
+@font-face {
+  font-family: "Cocogoose";
+  src: url(./fonts/cocogoose_trial-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
@@ -16,26 +23,20 @@ li {
   padding: 1rem;
 }
 
-@font-face {
-  font-family: "Cocogoose";
-  src: url(./fonts/cocogoose_trial-webfont.woff2) format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 header {
   background: white;
 }
 
 label,
 .primary,
-.display-4 {
+.display-4,
+h4 {
   color:#ec5242
 }
 
 .navbar-brand img {
   margin-left: 5rem;
-  width: 8rem;
+  width: 6rem;
   height: auto;
 }
 
@@ -52,10 +53,22 @@ h2,
   text-align: center;
 }
 
-.cocogoose {
-font-family: 'Cocogoose', Georgia, 'Times New Roman', Times, serif;
+.cocogoose,
+#mainprog h4 {
+font-family: 'Cocogoose', sans-serif;
 }
 
+.shadow {
+  text-shadow: .2em .2em .2em rgb(132, 134, 141);
+}
+.outline {
+  text-shadow: 
+    0.1em 0.05em 0 white,
+    -0.05em -0.05em 0 white,
+    -0.05em 0.05em 0 white,
+    0.05em -0.05em 0 white,
+    .2em .2em .2em rgb(132, 134, 141);
+}
 .steps {
   padding: 1rem;
   margin: 2rem;
@@ -64,7 +77,52 @@ font-family: 'Cocogoose', Georgia, 'Times New Roman', Times, serif;
 }
 
 .jumbotron {
-  background-image: url(./images/background.png), rgba(255,255,255,10);
+  background-image: url(./images/background.png);
   background-size: cover;
   height: 100%;
+}
+
+#mainprog {
+  padding-top: 2rem;
+  background-image: url(./images/tile.png);
+  background-size: auto;
+  color: whitesmoke;
+}
+
+.flexprog {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 5%;
+}
+
+.flexprog article {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  margin: .5em;
+  
+}
+
+
+
+@media screen and (min-width:768px) {
+  .flexprog {
+    display: flex;
+    flex-flow: row;
+    padding: 5% 10%;
+  }
+  
+  .flexprog article {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding:0.5rem;
+    /* margin: ; */
+    
+  }
+  
 }
