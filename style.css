@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+html{
+  font-size: 0.9rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,6 +27,13 @@ li {
   padding: 1rem;
 }
 
+hr {
+  height: 3px;
+  width: 40px;
+  background: var(--primary);
+  margin: 2rem auto;
+}
+
 header {
   background: white;
 }
@@ -32,7 +43,7 @@ label,
 .display-4,
 h4,
 h6 {
-  color:#ec5242
+  color: var(--primary)
 }
 
 .navbar-brand img {
@@ -44,7 +55,7 @@ h6 {
 .table-border {
 border: solid 1px;
 padding: 8px;
-background: linear-gradient(-45deg,#ec5242 0%,#ec5242 12.5%,#D3D3D3 12.5%, #D3D3D3 25%,#272A31 25%, #272A31 37.5%,#D3D3D3 37.5%, #D3D3D3 50%,#ec5242 50%,#ec5242 62.5%,#D3D3D3 62.5%, #D3D3D3 75%,#272A31 75%, #272A31 87.5%,#D3D3D3 87.5%, #D3D3D3 100%);
+background: linear-gradient(-45deg, var(--primary) 0%, var(--primary) 12.5%, var(--light) 12.5%,var(--light) 25%, var(--dark) 25%, var(--dark) 37.5%, var(--light) 37.5%, var(--light) 50%, var(--primary) 50%, var(--primary) 62.5%, var(--light) 62.5%, var(--light) 75%, var(--dark) 75%, var(--dark) 87.5%, var(--light) 87.5%, var(--light) 100%);
 margin-bottom: 5rem;
 background-size: 40px 40px;
 }
@@ -75,6 +86,8 @@ font-family: 'Cocogoose', sans-serif;
   margin: 2rem;
   border: solid 1px black;
   border-radius: 3rem;
+  max-width: 800px;
+  margin: 2em auto;
 }
 
 .jumbotron {
@@ -112,7 +125,10 @@ article > * {
 }
 
 .gridspk {
-
+  display: grid;
+  grid-template-columns: auto;
+  width: 90%;
+  margin: auto;
 }
 
 .gridspk article {
@@ -124,8 +140,12 @@ article > * {
   height: 150px;
   object-fit: cover;
   object-position: top;
-  border-top: 20px dashed rgb(132, 134, 141);
-  border-left: 20px dashed rgb(132, 134, 141);
+  box-shadow: -20px -20px rgb(26, 54, 153);
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+  margin-right: 1em;
 }
 
 #about-main {
@@ -142,7 +162,36 @@ article > * {
   bottom: 0;
   z-index: 2;
 }
-@media screen and (min-width:768px) {
+
+.lunch {
+  border: solid 1px var(--dark);
+  text-align: center;
+  margin-bottom: 2em;
+  max-width: 600px;
+  margin: 1em auto;
+}
+
+.lunch legend {
+  width: 100%;
+  background: var(--light);
+}
+
+.lunch span {
+  padding: 1em
+}
+
+input[type=submit] {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+
+.submitdiv {
+  width: 80px;
+  margin: 1em auto;
+}
+
+@media screen and (min-width:769px) {
   .flexprog {
     display: flex;
     flex-flow: row;
@@ -158,10 +207,8 @@ article > * {
 
   .gridspk {
     display: grid;
-    grid-template-columns:  40% 40%;
-    justify-content: ;
-    margin: auto;
-
+    grid-template-columns:  45% 45%;
+    justify-content:space-around;
   }
   
 }

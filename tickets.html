@@ -49,9 +49,11 @@
       
     </header>
     <main>
-      <form action="#">
+      <form action="#"></form>
         <div class="container">
           <h2>Select Tickets</h2>
+          <hr>
+          
           <p class="steps"><strong class="primary">&bullet; STEP 1</strong> Please select the day when you want to join New STEM Education Pradigm 2020</p>
           <div class="table-border table-responsive">
             <fieldset>
@@ -92,40 +94,52 @@
           </div>
         </div>
         <div>
-          <p class="d-1 text-center text white "><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+          <p class="display-4 text-center text white "><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
         </div>
         <div>
           <h2>Select select your lunch</h2>
+          <hr>
           <p class="steps"><strong class="primary">&bullet; STEP 2</strong> Lunch is included. Please select your preference.</p>
           
+          <fieldset class="lunch">
+            <legend>Menu Day 1</legend>
+            <div class="lunch-sel">
+              <span>
+                <label for="menu-d1-1">Menu 1</label>
+                <input type="radio" name="menu-d1" id="menu-d1-1">
+              </span>
+              <span>
+                <label for="menu-d1-2">Menu 2</label>
+                <input type="radio" name="menu-d1" id="menu-d1-2">
+              </span>
+              <span>
+                <label for="menu-d1-3">Menu 3</label>
+                <input type="radio" name="menu-d1" id="menu-d1-3">
+              </span>
+            </div>
+          </fieldset>
 
-            <fieldset>
-              <legend>Menu Day 1</legend>
-              <label for="menu-d1-1">Menu 1</label>
-              <input type="radio" name="menu-d1" id="menu-d1-1">
-              <label for="menu-d1-2">Menu 2</label>
-              <input type="radio" name="menu-d1" id="menu-d1-2">
-              <label for="menu-d1-3">Menu 3</label>
-              <input type="radio" name="menu-d1" id="menu-d1-3">
-              <label for="menu-d1-4">Menu 4</label>
-              <input type="radio" name="menu-d1" id="menu-d1-4">
-            </fieldset> 
-          
-          
-            <fieldset>
-              <legend> Menu Day 2</legend>
-              <label for="menu-d2-1">Menu 1</label>
-              <input type="radio" name="menu-d2" id="menu-d2-1">
-              <label for="menu-d2-2">Menu 2</label>
-              <input type="radio" name="menu-d2" id="menu-d2-2">
-              <label for="menu-d2-3">Menu 3</label>
-              <input type="radio" name="menu-d2" id="menu-d2-3">
-              <label for="menu-d2-4">Menu 4</label>
-              <input type="radio" name="menu-d2" id="menu-d2-4">
-            </fieldset>
-          
+          <fieldset class="lunch">
+            <legend> Menu Day 2</legend>
+            <div class="lunch-sel">
+              <span>
+                <label for="menu-d2-1">Menu 1</label>
+                <input type="radio" name="menu-d2" id="menu-d2-1">
+              </span>
+              <span>
+                <label for="menu-d2-2">Menu 2</label>
+                <input type="radio" name="menu-d2" id="menu-d2-2">
+              </span>
+              <span>
+                <label for="menu-d2-3">Menu 3</label>
+                <input type="radio" name="menu-d2" id="menu-d2-3">
+              </span>
+            </div>
+          </fieldset>          
         </div>
-        <input type="submit" value="Submit">
+        <div class="submitdiv">
+          <input type="submit" value="Submit">
+        </div>
       </form>
     </main>
 
