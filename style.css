@@ -15,6 +15,11 @@ html{
   font-size: 0.7rem;
 }
 
+body {
+max-width: 1200px;
+margin: auto
+}
+
 a {
   text-decoration: none;
 }
@@ -80,7 +85,11 @@ h6 {
 }
 
 h2,
-.steps {
+.steps,
+.lunch,
+#about-logo,
+#about-past,
+.flexprog article {
   text-align: center;
 }
 
@@ -142,7 +151,6 @@ font-family: 'Cocogoose', sans-serif;
   display: flex;
   flex-flow: row;
   justify-content: center;
-  text-align: center;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   margin: 0.5em;
@@ -204,7 +212,6 @@ article > * {
 #about-logo {
   max-width: 64rem;
   margin: 0 auto;
-  text-align: center;
 }
 
 #about-logo img {
@@ -244,7 +251,6 @@ article > * {
 
 .lunch {
   border: solid 1px var(--dark);
-  text-align: center;
   margin-bottom: 2em;
   max-width: 600px;
   margin: 1em auto;
