@@ -1,7 +1,7 @@
 :root {
-  --primary:#ec5242;
-  --light:#D3D3D3;
-  --dark:#272A31;
+  --primary: #ec5242;
+  --light: #d3d3d3;
+  --dark: #272a31;
 }
 
 @font-face {
@@ -11,13 +11,13 @@
   font-style: normal;
 }
 
-html{
+html {
   font-size: 0.7rem;
 }
 
 body {
-max-width: 1200px;
-margin: auto
+  max-width: 1200px;
+  margin: auto;
 }
 
 a {
@@ -25,7 +25,7 @@ a {
 }
 
 ul {
-list-style-type: none;
+  list-style-type: none;
 }
 
 li {
@@ -50,7 +50,12 @@ label,
 .display-4,
 h4,
 h6 {
-  color: var(--primary)
+  color: var(--primary);
+}
+
+footer img {
+  width: 5rem;
+  height: auto;
 }
 
 .navbar-brand img {
@@ -62,9 +67,9 @@ h6 {
 .table-border {
   border: solid 1px;
   padding: 8px;
-  background: linear-gradient(-45deg, var(--primary) 0%, var(--primary) 12.5%, var(--light) 12.5%,var(--light) 25%, var(--dark) 25%, var(--dark) 37.5%, var(--light) 37.5%, var(--light) 50%, var(--primary) 50%, var(--primary) 62.5%, var(--light) 62.5%, var(--light) 75%, var(--dark) 75%, var(--dark) 87.5%, var(--light) 87.5%, var(--light) 100%);
+  background: linear-gradient(-45deg, var(--primary) 0%, var(--primary) 12.5%, var(--light) 12.5%, var(--light) 25%, var(--dark) 25%, var(--dark) 37.5%, var(--light) 37.5%, var(--light) 50%, var(--primary) 50%, var(--primary) 62.5%, var(--light) 62.5%, var(--light) 75%, var(--dark) 75%, var(--dark) 87.5%, var(--light) 87.5%, var(--light) 100%);
   background-size: 40px 40px;
-  max-width:800px;
+  max-width: 800px;
   margin: 3rem auto;
 }
 
@@ -99,19 +104,19 @@ h2 {
 
 .cocogoose,
 #mainprog h4 {
-font-family: 'Cocogoose', sans-serif;
+  font-family: 'Cocogoose', sans-serif;
 }
 
 .shadow {
   text-shadow: 0.2em 0.2em 0.2em rgb(132, 134, 141);
 }
 
-.bg-lighter{
+.bg-lighter {
   background-color: #f5f5f5;
 }
 
 .outline {
-  text-shadow: 
+  text-shadow:
     0.1em 0.05em 0 white,
     -0.05em -0.05em 0 white,
     -0.05em 0.05em 0 white,
@@ -128,7 +133,7 @@ font-family: 'Cocogoose', sans-serif;
 }
 
 .jumbotron {
-  background-image: linear-gradient(to top,rgba(240,240,220,0.7),rgba(220,240,240,0.7)), url(./images/background.png);
+  background-image: linear-gradient(to top, rgba(240,240,220,0.7), rgba(220,240,240,0.7)), url(./images/background.png);
   background-size: cover;
   height: 100%;
 }
@@ -186,7 +191,7 @@ article > * {
 
 #partners {
   background: var(--dark);
-  color:white;
+  color: white;
   padding-bottom: 5rem;
 }
 
@@ -205,23 +210,13 @@ article > * {
 }
 
 #about-main {
-  background-image: linear-gradient(to top,rgba(240,240,220,0.7),rgba(220,240,240,0.7)), url(./images/background2.png);
+  background-image: linear-gradient(to top, rgba(240,240,220,0.7), rgba(220,240,240,0.7)), url(./images/background2.png);
 }
 
 #about-past,
 #about-logo {
   max-width: 64rem;
   margin: 0 auto;
-}
-
-#about-logo img {
-  display:block;
-  margin: 1em auto;
-}
-
-.past-events{
-  display: flex;
-  flex-direction: column;
 }
 
 .past-img img {
@@ -232,6 +227,16 @@ article > * {
   margin: 0 auto -14rem;
 }
 
+#about-logo img {
+  display: block;
+  margin: 1em auto;
+}
+
+.past-events {
+  display: flex;
+  flex-direction: column;
+}
+
 .past-img div {
   display: block;
   background-color: var(--primary);
@@ -239,10 +244,10 @@ article > * {
   height: 14rem;
   width: 20rem;
   padding-top: 2rem;
-  margin: 0 auto 5rem;;
+  margin: 0 auto 5rem;
 }
 
-.past-img >* {
+.past-img > * {
   color: white;
   font-family: "Cocogoose", sans-serif;
   text-align: center;
@@ -262,7 +267,7 @@ article > * {
 }
 
 .lunch span {
-  padding: 1em
+  padding: 1em;
 }
 
 input[type=submit] {
@@ -283,11 +288,6 @@ footer {
   display: inline-flex;
   justify-content: space-evenly;
   color: var(--light);
-  }
-
-footer img {
-  width: 5rem;
-  height: auto;
 }
 
 .footer-light {
@@ -295,13 +295,13 @@ footer img {
   color: var(--dark);
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
   .flexprog {
     display: flex;
     flex-flow: row;
     padding: 5% 10%;
   }
-  
+
   .flexprog article {
     display: flex;
     flex-flow: column;
@@ -311,12 +311,12 @@ footer img {
 
   .gridspk {
     display: grid;
-    grid-template-columns:  45% 45%;
-    justify-content:space-around;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
   }
- 
+
   .past-events {
     flex-direction: row;
-    justify-content: space-evenly
+    justify-content: space-evenly;
   }
 }
